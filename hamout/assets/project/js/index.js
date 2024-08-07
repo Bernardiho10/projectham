@@ -17,15 +17,14 @@ new class FormModel extends BaseViewModel {
         this.FormTitle.hydrate(this, "Sign in to your account for");
     }
     save(vm) {
-        console.log("Params...", vm);
+        const vt = vm;
         const data = vm.payload();
-        console.log("Data...", data, vm.PARAMS);
-        console.log(this.Email, this.payload());
-        if (this.Email.value === data && this.Password.value === data) {
-            this.FeedBack.hydrate(this, "Login Successful");
+        console.log("Data...", vt);
+        if (vt.Email.value === data && vt.Password.value === data) {
+            vt.FeedBack.hydrate(vt, "Login Successful");
         }
         else {
-            this.FeedBack.hydrate(this, "Invalid Username or Password");
+            vt.FeedBack.hydrate(vt, "Invalid Username or Password");
         }
     }
 }('form-page');
