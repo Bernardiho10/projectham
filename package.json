@@ -1,6 +1,9 @@
 {
 	  "name": "project",
 	  "version": "1.0.0",
+	  "scripts": {
+		"build": "powershell -ExecutionPolicy ByPass -File \"C:\\Users\\User\\Desktop\\youtube\\project\\build.ps1\""
+	  },
 	  "description": "",
 	  "type": "module",
 	  "dependencies": {
