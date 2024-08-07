@@ -1,4 +1,4 @@
-import { ButtonMagicElement, InputMagicElement, BaseViewModel, ViewModel, MagicElement, TextMagicElement } from "@boudev/magicui/lib/esm/index.js";
+import { ButtonMagicElement, InputMagicElement, BaseViewModel, ViewModel, MagicElement, TextMagicElement } from "/assets/magicui/lib/esm/index.js";
 const user = {
     "email": "bernadarsikuoko@gmail.com",
     "password": "password123"
