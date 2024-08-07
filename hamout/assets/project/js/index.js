@@ -14,14 +14,16 @@ new class FormModel extends BaseViewModel {
         this.FormTitle = new TextMagicElement("form-title", "");
         this.Email.hydrate(this, user.email);
         this.Password.hydrate(this, user.password);
-        this.FormTitle.hydrate(this, "Sign in to your account for");
+        this.FormTitle.hydrate(this, "Sign in to your account");
     }
     save(vm) {
         const vt = vm;
         const data = vm.payload();
         console.log("Data...", vt);
-        if (vt.Email.value === data && vt.Password.value === data) {
+        if (vt.Email.value === user.email && vt.Password.value === user.password) {
+            window.location.href = "welcome.html";
             vt.FeedBack.hydrate(vt, "Login Successful");
+            vt.FormTitle.hydrate(vt, "");
         }
         else {
             vt.FeedBack.hydrate(vt, "Invalid Username or Password");
