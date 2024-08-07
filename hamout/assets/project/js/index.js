@@ -15,12 +15,12 @@ new class FormModel extends BaseViewModel {
         this.Email.hydrate(this, user.email);
         this.Password.hydrate(this, user.password);
         this.FormTitle.hydrate(this, "Sign in to your account for");
-        this.hydrate(user);
     }
     save(vm) {
-        console.log("Params...", vm.PARAMS);
+        console.log("Params...", vm);
         const data = vm.payload();
         console.log("Data...", data, vm.PARAMS);
+        console.log(this.Email, this.payload());
         if (this.Email.value === data && this.Password.value === data) {
             this.FeedBack.hydrate(this, "Login Successful");
         }
