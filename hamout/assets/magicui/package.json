@@ -1,0 +1,39 @@
+{
+  "name": "@boudev/magicui",
+  "version": "1.0.12",
+  "private": false,
+  "description": "A simple UI library written in TypeScript",
+  "main": "./lib/esm/index.js",
+  "module": "./lib/cjs/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "rm -Rf lib &&  npx tsc && npx tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "types": "./lib/esm/index.d.ts",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fobilow/magicui.git"
+  },
+  "keywords": [
+    "UI",
+    "Library",
+    "UX",
+    "TypeScript"
+  ],
+  "author": "Okechukwu Ugwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fobilow/magicui/issues"
+  },
+  "homepage": "https://github.com/fobilow/magicui#readme"
+}

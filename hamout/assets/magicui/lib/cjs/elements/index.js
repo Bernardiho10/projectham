@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DateInputMagicElement = exports.BooleanInputMagicElement = exports.FloatInputMagicElement = exports.NumberInputMagicElement = exports.SelectInputMagicElement = exports.InputMagicElement = exports.TableMagicElement = exports.ButtonMagicElement = exports.TextMagicElement = exports.MagicElement = void 0;
+const elements_js_1 = require("./elements.js");
+Object.defineProperty(exports, "MagicElement", { enumerable: true, get: function () { return elements_js_1.MagicElement; } });
+Object.defineProperty(exports, "TextMagicElement", { enumerable: true, get: function () { return elements_js_1.TextMagicElement; } });
+Object.defineProperty(exports, "ButtonMagicElement", { enumerable: true, get: function () { return elements_js_1.ButtonMagicElement; } });
+const table_js_1 = require("./table.js");
+Object.defineProperty(exports, "TableMagicElement", { enumerable: true, get: function () { return table_js_1.TableMagicElement; } });
+const input_js_1 = require("./input.js");
+Object.defineProperty(exports, "InputMagicElement", { enumerable: true, get: function () { return input_js_1.InputMagicElement; } });
+Object.defineProperty(exports, "SelectInputMagicElement", { enumerable: true, get: function () { return input_js_1.SelectInputMagicElement; } });
+Object.defineProperty(exports, "NumberInputMagicElement", { enumerable: true, get: function () { return input_js_1.NumberInputMagicElement; } });
+Object.defineProperty(exports, "FloatInputMagicElement", { enumerable: true, get: function () { return input_js_1.FloatInputMagicElement; } });
+Object.defineProperty(exports, "BooleanInputMagicElement", { enumerable: true, get: function () { return input_js_1.BooleanInputMagicElement; } });
+Object.defineProperty(exports, "DateInputMagicElement", { enumerable: true, get: function () { return input_js_1.DateInputMagicElement; } });
