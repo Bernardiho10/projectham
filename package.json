@@ -1,0 +1,10 @@
+{
+	  "name": "project",
+	  "version": "1.0.0",
+	  "description": "",
+	  "type": "module",
+	  "dependencies": {
+	  	  "@boudev/magicui": "^1.0.12",
+	  	  "typescript": "^5.5.4"
+	  }
+}
