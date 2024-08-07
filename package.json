@@ -2,7 +2,7 @@
 	  "name": "project",
 	  "version": "1.0.0",
 	  "scripts": {
-		"build": "ham build && ham serve"
+		"build": "powershell -ExecutionPolicy ByPass -File \"C:\\Users\\User\\Desktop\\youtube\\project\\build.ps1\""
 	  },
 	  "description": "",
 	  "type": "module",
