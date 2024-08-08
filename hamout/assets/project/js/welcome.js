@@ -1,4 +1,4 @@
-import { TextMagicElement } from "/assets/magicui/lib/esm/index.js";
+import { TextMagicElement } from "@boudev/magicui/lib/esm/index.js";
 import { UserViewModel } from "./user.js";
 new class WelcomeViewModel extends UserViewModel {
     constructor(id) {

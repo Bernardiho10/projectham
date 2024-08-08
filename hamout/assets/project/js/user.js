@@ -1,4 +1,4 @@
-import { BaseViewModel } from "/assets/magicui/lib/esm/index.js";
+import { BaseViewModel } from "@boudev/magicui/lib/esm/index.js";
 export class UserViewModel extends BaseViewModel {
     constructor(id) {
         super(id);
