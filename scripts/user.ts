@@ -1,7 +1,14 @@
 import { BaseViewModel } from "@boudev/magicui/lib/esm/index.js"
 
+type user = {
+    email: string,
+    password: string,
+    name: string,
+    id?: string  
+}
+
 export class UserViewModel extends BaseViewModel {
-    Data = {
+    Data: user = {
         "email": "bernadarsikuoko@gmail.com",
         "password": "password123",
         "name": "Bernard Oko"

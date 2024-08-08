@@ -8,6 +8,7 @@ new class FormModel extends UserViewModel {
     Button = new ButtonMagicElement("submit-btn").OnClick(this.save)
     FeedBack = new TextMagicElement("feedback", "")
     FormTitle = new TextMagicElement("form-title", "")
+    
         constructor(id: string){
             super(id) 
             this.FormTitle.hydrate(this, "Sign in to your account")
@@ -20,7 +21,7 @@ new class FormModel extends UserViewModel {
             if(vt.Email.value === vt.Data.email && vt.Password.value === vt.Data.password){
                 vt.FeedBack.hydrate(vt, "Login Successful")
                 
-                window.location.href = "welcome.html"
+                window.location.href = "welcome.html?token=tiktok"
             } else {
                 vt.FeedBack.hydrate(vt, "Invalid Username or Password")
             }

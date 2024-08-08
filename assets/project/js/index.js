@@ -17,7 +17,7 @@ new class FormModel extends UserViewModel {
         console.log("Data...", vt);
         if (vt.Email.value === vt.Data.email && vt.Password.value === vt.Data.password) {
             vt.FeedBack.hydrate(vt, "Login Successful");
-            window.location.href = "welcome.html";
+            window.location.href = "welcome.html?token=tiktok";
         }
         else {
             vt.FeedBack.hydrate(vt, "Invalid Username or Password");
