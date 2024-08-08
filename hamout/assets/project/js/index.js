@@ -1,4 +1,4 @@
-import { ButtonMagicElement, InputMagicElement, BaseViewModel, ViewModel, MagicElement, TextMagicElement } from "@boudev/magicui/lib/esm/index.js";
+import { ButtonMagicElement, InputMagicElement, BaseViewModel, ViewModel, MagicElement, TextMagicElement } from "/assets/magicui/lib/esm/index.js";
 import { UserViewModel } from "./user.js";
 new class FormModel extends UserViewModel {
     constructor(id) {

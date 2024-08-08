@@ -1,6 +1,6 @@
 import { BaseViewModel } from "@boudev/magicui/lib/esm/index.js"
 
-type user = {
+interface user  {
     email: string,
     password: string,
     name: string,
