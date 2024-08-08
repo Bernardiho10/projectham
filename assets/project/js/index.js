@@ -1,9 +1,6 @@
 import { ButtonMagicElement, InputMagicElement, BaseViewModel, ViewModel, MagicElement, TextMagicElement } from "/assets/magicui/lib/esm/index.js";
-const user = {
-    "email": "bernadarsikuoko@gmail.com",
-    "password": "password123"
-};
-new class FormModel extends BaseViewModel {
+import { UserViewModel } from "./user.js";
+new class FormModel extends UserViewModel {
     constructor(id) {
         super(id);
         this.Id = new MagicElement("id");
@@ -12,18 +9,15 @@ new class FormModel extends BaseViewModel {
         this.Button = new ButtonMagicElement("submit-btn").OnClick(this.save);
         this.FeedBack = new TextMagicElement("feedback", "");
         this.FormTitle = new TextMagicElement("form-title", "");
-        this.Email.hydrate(this, user.email);
-        this.Password.hydrate(this, user.password);
         this.FormTitle.hydrate(this, "Sign in to your account");
     }
     save(vm) {
         const vt = vm;
         const data = vm.payload();
         console.log("Data...", vt);
-        if (vt.Email.value === user.email && vt.Password.value === user.password) {
-            window.location.href = "welcome.html";
+        if (vt.Email.value === vt.Data.email && vt.Password.value === vt.Data.password) {
             vt.FeedBack.hydrate(vt, "Login Successful");
-            vt.FormTitle.hydrate(vt, "");
+            window.location.href = "welcome.html";
         }
         else {
             vt.FeedBack.hydrate(vt, "Invalid Username or Password");
