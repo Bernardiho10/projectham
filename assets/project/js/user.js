@@ -5,7 +5,7 @@ export class UserViewModel extends BaseViewModel {
         this.Data = {
             "email": "bernadarsikuoko@gmail.com",
             "password": "password123",
-            "name": "Bernard Oko"
+            "name": "Bernard Oko",
         };
         this.hydrate(this.Data);
     }
